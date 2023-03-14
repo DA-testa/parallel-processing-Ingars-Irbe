@@ -13,21 +13,12 @@ def parallel_processing(n, m, data):
             if num >= m:
                 break
 
-            
-
-
-
-
-
-
-
     return output
 
 def main():
-    # TODO: create input from keyboard
+
     sk = input()
     sk = sk.split()
-    # first line - n and m
     # n - thread count 
     # m - job count
     n = int(sk[0])
@@ -37,12 +28,8 @@ def main():
     # data - contains m integers t(i) - the times in seconds it takes any thread to process i-th job
     data = list(map(int, input().split()))
 
-
-    # TODO: create the function
-
     result = parallel_processing(n,m,data)
-    
-    # TODO: print out the results, each pair in it's own line
+
     for i, j in result:
         print(i, j)
 
